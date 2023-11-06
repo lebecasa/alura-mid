@@ -13,6 +13,12 @@ while(contador<listadeteclas.length){
     tecla.onclick = function(){
         tocaSom(idAudio)
     }
-    
+tecla.onkeydown = function (evento) {
+    if(evento.code = = 'enter')
+tecla.classlist.add('ativa')    
+}
+    tecla.onkeyup = function (){
+        tecla.classlist.remove ('ativa')
+    }
 }
 const listadeteclas=document.querySelectorAll('.tecla');
